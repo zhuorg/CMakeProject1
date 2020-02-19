@@ -2,6 +2,9 @@ name: build CMake Project
 on: push
 jobs: 
   job1: 
+    strategy:
+      matrix:
+        tag: [ $GITHUB_SHA, $GITHUB_REF ]
     runs-on: windows-latest
     steps: 
     - uses: actions/checkout@v2
