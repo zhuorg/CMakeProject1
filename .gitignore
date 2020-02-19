@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/CMakeFiles
+/CMakeProject1/CMakeProject1.dir/Debug
+/Win32/Debug/ZERO_CHECK
