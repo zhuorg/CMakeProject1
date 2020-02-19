@@ -4,7 +4,8 @@ jobs:
   job1: 
     strategy:
       matrix:
-        tag: [ $GITHUB_SHA, $GITHUB_REF ]
+        tag: 
+          - '${{ github.sha }} ' 
     runs-on: windows-latest
     steps: 
     - uses: actions/checkout@v2
