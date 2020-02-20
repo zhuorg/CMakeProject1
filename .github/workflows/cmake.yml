@@ -2,7 +2,7 @@ name: build CMake Project
 on: push
 jobs: 
   job1: 
-    runs-on: windows-2016
+    runs-on: ubuntu-latest
     steps: 
     - uses: actions/checkout@v2
-    - run : cmake -G "Visual Studio 15 2017" .
+    - run : rsync --version
