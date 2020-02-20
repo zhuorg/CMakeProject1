@@ -2,9 +2,6 @@ name: build CMake Project
 on: push
 jobs: 
   job1: 
-    strategy:
-      matrix:
-        tag: [ '${{ github.sha }} '  ]
     runs-on: windows
     steps: 
     - uses: actions/checkout@v2
