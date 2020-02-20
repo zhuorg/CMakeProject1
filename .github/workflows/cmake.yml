@@ -2,7 +2,7 @@ name: build CMake Project
 on: push
 jobs: 
   job1: 
-    runs-on: windows
+    runs-on: windows-2016
     steps: 
     - uses: actions/checkout@v2
     - run : cmake -G "Visual Studio 15 2017" .
