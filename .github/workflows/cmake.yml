@@ -5,7 +5,7 @@ jobs:
     strategy:
       matrix:
         tag: [ '${{ github.sha }} '  ]
-    runs-on: windows-latest
+    runs-on: windows
     steps: 
     - uses: actions/checkout@v2
-    - run : cmake -G "Visual Studio 16 2019" .
+    - run : cmake -G "Visual Studio 15 2017" .
